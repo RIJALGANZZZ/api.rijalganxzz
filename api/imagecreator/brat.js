@@ -18,7 +18,7 @@ app.get('/imagecreator/bratvideo', async (req, res) => {
         try {
             const { apikey, text } = req.query
             if (!global.apikey.includes(apikey)) return res.json({ status: false, error: 'Apikey invalid' })
-            const pedo = await getBuffer(`https://fastrestapis.fasturl.cloud/maker/brat/animated?text=${text}&mode=animated`)
+            const pedo = await getBuffer(`https://zenzxz.dpdns.org/maker/bratvid?text=${text}`)
             res.writeHead(200, {
                 'Content-Type': 'video/mp4',
                 'Content-Length': pedo.length,
